@@ -1,10 +1,11 @@
 .main-body{
-    z-index: 1;
+    
     height : 100vh;
     width : 100vw;
-    background :rgb(35,37,42);
+    background :rgb(15, 15, 15);
     
     border-radius: 30px;
     position: relative;
      display: flex;
 }
+

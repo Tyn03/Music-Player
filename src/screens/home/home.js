@@ -2,6 +2,7 @@
 
 import React, { useState,useEffect } from "react";
 import{ BrowserRouter as Router, Routes,Route} from "react-router-dom";
+import Anhnen from '../../img/anh-dep-ve-am-nhac-04688.jpg';
 
 
 import Library from '../library';
@@ -39,7 +40,8 @@ import { setClientToken } from "../../spotify";
     )  :(
     
     <Router>
-    <div className="main-body">
+    <div className="main-body" >
+        
         
     <Sidebar/>
     <Routes>
