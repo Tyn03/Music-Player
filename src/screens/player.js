@@ -262,7 +262,7 @@ function Player() {
         
         </div>
 
-        <div className="musicPlayer">
+        <div className="musicPlayer2">
       <div className="songImage">
         <img src={img} alt="" />
       </div>
