@@ -1,5 +1,5 @@
 import React,{useState,useEffect,useRef} from 'react'
-import {Songs} from "./Songs";
+import {SongFavorites} from "./SongFavorites";
 import { MusicPlayer } from './MusicPlayer';
 import "../Styles/favorites.css";
 import {
@@ -20,7 +20,7 @@ import { BsDownload } from "react-icons/bs";
 
 
 function AudioList() {
-    const [song,setSong] = useState(Songs[0].song);
+    const [song,setSong] = useState(SongFavorites[0].song);
     const [img,setImage] = useState(song[0].imgSrc);
     const [songIndex, setSongIndex] = useState(0);
     
@@ -38,7 +38,7 @@ function AudioList() {
     },[]);
 
     const changeFavourite = (id) =>{
-        Songs.forEach(song => {
+      SongFavorites.forEach(song => {
             if(song.id == id){
                 song.favourite = !song.favourite;
             }
@@ -57,19 +57,19 @@ function AudioList() {
   const [isLove, setLove] = useState(false);
   const [isPlaying, setPlay] = useState(false);
  
-  const [currentSong, setcurrentSongIndex] = useState(Songs[songIndex]);
+  const [currentSong, setcurrentSongIndex] = useState(SongFavorites[songIndex]);
   
   
   console.log("",+songIndex);
 
   useEffect(() => {
     // Khi song hoặc SongIndex thay đổi, cập nhật giá trị của Nsong
-    setSong(Songs[songIndex].song);
+    setSong(SongFavorites[songIndex].song);
   }, [song, songIndex])
 
   useEffect(() => {
     // Khi song hoặc SongIndex thay đổi, cập nhật giá trị của Nsong
-    setImage(Songs[songIndex].imgSrc);
+    setImage(SongFavorites[songIndex].imgSrc);
   }, [song, songIndex])
   
   
@@ -126,13 +126,13 @@ function AudioList() {
   const playPreviousSong = () => {
     var tmp=songIndex;
     if (songIndex === 0) {
-      tmp = Songs.length - 1;
+      tmp = SongFavorites.length - 1;
       setSongIndex(tmp);
-      setcurrentSongIndex(Songs[tmp]);
+      setcurrentSongIndex(SongFavorites[tmp]);
     } else {
       tmp = songIndex - 1;
       setSongIndex(tmp);
-      setcurrentSongIndex(Songs[tmp]);
+      setcurrentSongIndex(SongFavorites[tmp]);
     }
   
     // Tắt bài hát hiện tại
@@ -140,8 +140,8 @@ function AudioList() {
     audioPlayer.current.currentTime = 0;
   
     // Đặt bài hát mới và chạy
-    setSong(Songs[tmp].song);
-    setImage(Songs[tmp].imgSrc);
+    setSong(SongFavorites[tmp].song);
+    setImage(SongFavorites[tmp].imgSrc);
     //audioPlayer.current.play();
     setPlay(true);
     animationRef.current = requestAnimationFrame(whilePlaying);
@@ -149,14 +149,14 @@ function AudioList() {
 
   const playNextsSong = () => {
     var tmp=songIndex;
-    if (songIndex === Songs.length-1) {
+    if (songIndex === SongFavorites.length-1) {
       tmp = 0;
       setSongIndex(tmp);
-      setcurrentSongIndex(Songs[tmp]);
+      setcurrentSongIndex(SongFavorites[tmp]);
     } else {
       tmp = songIndex + 1;
       setSongIndex(tmp);
-      setcurrentSongIndex(Songs[tmp]);
+      setcurrentSongIndex(SongFavorites[tmp]);
       console.log(""+songIndex)
       
     }
@@ -166,8 +166,8 @@ function AudioList() {
     audioPlayer.current.currentTime = 0;
   
     // Đặt bài hát mới và chạy
-    setSong(Songs[tmp].song);
-    setImage(Songs[tmp].imgSrc);
+    setSong(SongFavorites[tmp].song);
+    setImage(SongFavorites[tmp].imgSrc);
     //audioPlayer.current.play();
     setPlay(true);
     animationRef.current = requestAnimationFrame(whilePlaying);
@@ -229,12 +229,12 @@ function AudioList() {
   return (
     <div className="audioList">
         <h2 className="title">
-            The List <span>{`${Songs.length} songs`}</span>
+            The List <span>{`${SongFavorites.length} songs`}</span>
         </h2>
 
         <div className="songsContainer">
             {
-                Songs && Songs.map((song,index)=>(
+                SongFavorites && SongFavorites.map((song,index)=>(
                     <div className="songs" key={song.id}
                         onClick = {() => {setMainSong(song?.song,song?.imgSrc);
                             setSongIndex(index); // Cập nhật index của bài hát

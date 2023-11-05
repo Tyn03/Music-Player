@@ -1,4 +1,4 @@
-const Songs = [
+const SongFavorites = [
     {
       id: 1,
       favourite: false,
@@ -35,34 +35,11 @@ const Songs = [
       imgSrc:
         "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fattention.PNG?alt=media&token=a539f5bf-2782-4efa-a4be-937076650f0e&_gl=1*g2ieiz*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzY1NDk0Ny4zNi4xLjE2OTc2NTUwOTUuNjAuMC4w"
     },
+    
+    
+    
     {
       id: 5,
-      favourite: false,
-      songName: "We don't Talk Anymone",
-      artist: "Charlie Puth",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FCharlie%20Puth%20-%20We%20Don't%20Talk%20Anymore%20(feat.%20Selena%20Gomez)%20%5BOfficial%20Video%5D.mp3?alt=media&token=d2bc2f5a-f759-4201-ac8f-1ee8200b945a&_gl=1*1ebx7qb*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzUyNjk4Mi4zNC4xLjE2OTc1MzE0NDguNjAuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fwe%20do%20not%20talk.PNG?alt=media&token=c752c9d5-0e7b-40f9-9d09-56146e8fc624&_gl=1*1djbt2a*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzY1NDk0Ny4zNi4xLjE2OTc2NTUxMzAuMjUuMC4w",
-    },
-    {
-      id: 6,
-      songName: "A Thousand Years",
-      artist: "Christina Perri",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FChristina%20Perri%20-%20A%20Thousand%20Years%20%5BOfficial%20Music%20Video%5D.mp3?alt=media&token=7e05eabe-1fcd-497a-b558-18164d7eb261&_gl=1*1iidr91*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzUyNjk4Mi4zNC4xLjE2OTc1MzE0ODguMjAuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fa%20thousand%20years.PNG?alt=media&token=b650c6b3-d24a-4f66-8918-b1d011730da3&_gl=1*16r3fs1*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzY1NDk0Ny4zNi4xLjE2OTc2NTUxNDcuOC4wLjA.",
-    },
-    {
-      id: 7,
-      favourite: false,
-      songName: "Thinking Out Loud",
-      artist: "Ed Sheeran",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FEd%20Sheeran%20-%20Thinking%20Out%20Loud%20(Official%20Music%20Video).mp3?alt=media&token=ba39c8b7-a567-41b6-b3b9-93e1545a7951&_gl=1*choujf*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzUyNjk4Mi4zNC4xLjE2OTc1MzE1ODEuNDkuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fthining%20out%20loud.PNG?alt=media&token=168554ab-1f82-4751-940d-e28c922a323b&_gl=1*usqhj7*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzY1NDk0Ny4zNi4xLjE2OTc2NTUxNjIuNjAuMC4w",
-    },
-    {
-      id: 8,
       favourite: false,
       songName: "Until I Found You",
       artist: "Stephen Sanchez",
@@ -71,7 +48,7 @@ const Songs = [
         "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Funtil%20i%20found%20you.PNG?alt=media&token=517ce8c9-faaa-446b-9982-d81874672383&_gl=1*18b8925*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5NzY1NDk0Ny4zNi4xLjE2OTc2NTUxNzcuNDUuMC4w",
     },
     {
-      id: 9,
+      id: 6,
       favourite: false,
       songName: "See You Again ft. Charlie Puth",
       artist: "Wiz Khalifa",
@@ -124,33 +101,9 @@ const Songs = [
       imgSrc:
         "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fmarry%20tou.PNG?alt=media&token=7c202727-1e1f-4325-a01c-1a301e7a4419&_gl=1*1adxgtf*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUxODYuNi4wLjA.",
     },
-    {
-      id: 15,
-      favourite: false,
-      songName: "Leave the door Open",
-      artist: "Bruno Mars, Anderson.Paak,Silk Sonic ",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FBruno%20Mars%2C%20Anderson%20.Paak%2C%20Silk%20Sonic%20-%20Leave%20the%20Door%20Open%20%5BOfficial%20Video%5D.mp3?alt=media&token=4fad7afb-ddc1-4e54-9f43-8e5d1430d3c5&_gl=1*18d8p69*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTQyNDkuMjYuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fleave%20the%20door.PNG?alt=media&token=f66dfe0c-143c-472c-89fe-a3bf6664675b&_gl=1*13a6sz5*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUxNjUuMjcuMC4w",
-    },
-    {
-      id: 16,
-      favourite: false,
-      songName: "Left and Right",
-      artist: "Charlie Puth ft Jung Kook ",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FCharlie%20Puth%20-%20Left%20And%20Right%20(feat.%20Jung%20Kook%20of%20BTS)%20%5BOfficial%20Video%5D.mp3?alt=media&token=00df4160-ad4c-42cb-8af2-33c0e6aba0b7&_gl=1*1v8jf8a*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTQzMjUuNjAuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fleft%20and%20right.PNG?alt=media&token=f74044a7-f2cb-4b9e-9e4a-fb2087f3122c&_gl=1*13apzj*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUxNDkuNDMuMC4w",
-    },
-    {
-      id: 17,
-      favourite: false,
-      songName: "I don't care",
-      artist: "Ed Sherran & Justin Bieber  ",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FEd%20Sheeran%20%26%20Justin%20Bieber%20-%20I%20Don't%20Care%20%5BOfficial%20Music%20Video%5D.mp3?alt=media&token=ba0aa27d-4e98-4c07-8d9d-c60547ff822d&_gl=1*ur34yi*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTQ0MjUuNjAuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fi%20do%20not%20care.PNG?alt=media&token=7b2ca2cc-c872-4c06-960c-4e2d781ba888&_gl=1*1c59os2*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUxMzIuNjAuMC4w",
-    },
+    
+    
+    
     {
       id: 18,
       favourite: false,
@@ -169,27 +122,10 @@ const Songs = [
       imgSrc:
         "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fhit%20me%20up.PNG?alt=media&token=156431ae-806d-4ba7-a651-102df75da550&_gl=1*ijtgdq*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUwOTAuMzkuMC4w",
     },
-    {
-      id: 20,
-      favourite: false,
-      songName: "At My Worst",
-      artist: "Pink Sweat",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FPink%20Sweat%24%20-%20At%20My%20Worst%20(feat.%20Kehlani)%20%5BOfficial%20Video%5D.mp3?alt=media&token=9e334a2e-ee74-40bd-a3fa-241802d233f0&_gl=1*19sj44*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTQ1NjguNjAuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Fat%20my%20worst.PNG?alt=media&token=97ff56b2-37aa-49e5-b51f-9f6a0246576c&_gl=1*1e2sb3z*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUwNjkuNjAuMC4w",
-    },
-    {
-      id: 21,
-      favourite: false,
-      songName: "EYES,NOSE,LIPS",
-      artist: "TAEYANG",
-      song: "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/music%2FTAEYANG%20-%20%EB%88%88%2C%EC%BD%94%2C%EC%9E%85%20(EYES%2C%20NOSE%2C%20LIPS)%20M-V.mp3?alt=media&token=81604e3f-efcd-4191-8f7f-1df5709f7a0f&_gl=1*1ld7ncq*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTQ2MjguNjAuMC4w",
-      imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/khang123-f9f5a.appspot.com/o/image%2Feye%2Cnose%2Clip.PNG?alt=media&token=47c1391e-fc15-4cd0-af89-8b1e3c392ff9&_gl=1*13dsg6p*_ga*NjkyMjc0NTA4LjE2OTIyMDk4Njc.*_ga_CW55HF8NVT*MTY5OTIxMzkwMi40My4xLjE2OTkyMTUwNTUuMi4wLjA.",
-    },
+    
 
 
 
   ];
   
-  export { Songs };
+  export  {SongFavorites};
