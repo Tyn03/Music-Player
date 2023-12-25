@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/webMusic/static/css/main.eb82a65f.css",
+    "main.js": "/webMusic/static/js/main.16b294c0.js",
+    "static/js/496.90ab48d4.chunk.js": "/webMusic/static/js/496.90ab48d4.chunk.js",
+    "static/media/anime.jpg": "/webMusic/static/media/anime.4947a75d077a88b9acc7.jpg",
+    "static/media/anh-dep-ve-am-nhac-04688.jpg": "/webMusic/static/media/anh-dep-ve-am-nhac-04688.88ff0fb224332c4d64b7.jpg",
+    "index.html": "/webMusic/index.html",
+    "main.eb82a65f.css.map": "/webMusic/static/css/main.eb82a65f.css.map",
+    "main.16b294c0.js.map": "/webMusic/static/js/main.16b294c0.js.map",
+    "496.90ab48d4.chunk.js.map": "/webMusic/static/js/496.90ab48d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb82a65f.css",
+    "static/js/main.16b294c0.js"
+  ]
+}
